@@ -1,5 +1,27 @@
-@media (max-width: 1500px) {
-   .navbar-collapse{
-       display: flex;
-   }
-}
+    .navbar-toggler>.close {
+        display: inline;
+    }
+    
+    .navbar-toggler.collapsed>.close,
+    .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+        display: none;
+    }
+    
+    @media (min-width: 1000px) {
+        #insideNavbar {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .navbar {
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+    }
+    
+    @media (max-width: 1500px) {
+        .navbar-collapse {
+            display: inline;
+        }
+    }
+    
+    .type-1 {}
