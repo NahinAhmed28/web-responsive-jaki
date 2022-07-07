@@ -1,159 +1,161 @@
-    .navbar-toggler>.close {
+.navbar-toggler>.close {
+    display: inline;
+}
+
+.navbar-toggler.collapsed>.close,
+.navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display: none;
+}
+
+.navbar {
+    top: 0;
+    right: 0;
+    height: 0px;
+    z-index: 100;
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    #insideNavbar {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .navbar {
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media (max-width: 1500px) {
+    .navbar-collapse {
         display: inline;
     }
-    
-    .navbar-toggler.collapsed>.close,
-    .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-        display: none;
-    }
-    
-    .navbar {
-        top: 0;
-        right: 0;
-        height: 40px;
-        z-index: 100;
-        color: white;
-    }
-    
-    @media (min-width: 1000px) {
-        #insideNavbar {
-            margin-left: 100px;
-            margin-right: 100px;
-        }
-        .navbar {
-            margin-left: 250px;
-            margin-right: 250px;
-        }
-    }
-    
-    @media (max-width: 1500px) {
-        .navbar-collapse {
-            display: inline;
-        }
-    }
-    /* .type-1 {
-        max-width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: -9999;
-        min-height: clamp(0px, 56.25vw, 100vh) !important;
-        background: url(../style/clock-bg.png) no-repeat center center fixed;
-        background-size: cover;
-        background-position: center;
-    }
-     */
-    
-    .showcase1 {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 20px;
-        color: white;
-    }
-    
-    .img-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-    
-    .img-container img {
-        max-width: 95%;
-        min-height: 100%;
-        object-fit: cover;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .content {
-        z-index: 10;
-        background-color: rgba(7, 14, 16, 0.3);
-        width: 97%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        /*for vertically center*/
-        justify-content: center;
-        /*for horizontally center*/
-    }
-    
+}
+
+
+/* .type-1 {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -9999;
+    min-height: clamp(0px, 56.25vw, 100vh) !important;
+    background: url(../style/clock-bg.png) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+ */
+
+.showcase1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+    color: white;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    max-width: 95%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    z-index: 10;
+    background-color: rgba(7, 14, 16, 0.3);
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*for vertically center*/
+    justify-content: center;
+    /*for horizontally center*/
+}
+
+.content h1 {
+    font-size: 80px;
+    font-weight: 150;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 10%;
+}
+
+@media screen and (max-width: 767px) {
     .content h1 {
-        font-size: 80px;
+        font-size: 40px;
         font-weight: 150;
         font-family: 'Times New Roman', Times, serif;
         margin-left: 5vh;
         margin-right: 5vh;
-        margin-top: 10%;
     }
-    
-    @media screen and (max-width: 767px) {
-        .content h1 {
-            font-size: 40px;
-            font-weight: 150;
-            font-family: 'Times New Roman', Times, serif;
-            margin-left: 5vh;
-            margin-right: 5vh;
-        }
-    }
-    
-    .showcase2 {
-        width: 95%;
-        margin-left: 5vh;
-        margin-right: 5vh;
-        margin-top: 10%;
-    }
-    
-    #showcase2div {
-        margin-left: 10vw;
-        margin-right: 5vw;
-    }
-    
-    #showcase2divText {
-        background-color: #2596be;
-        padding: 85px 50px 75px 50px;
-        color: white;
-    }
-    
-    #showcase2divImg {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .showcase3 {
-        margin-top: 10%;
-        width: 95%;
-        position: relative;
-        height: 30vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        object-fit: cover;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .content2 {
-        z-index: 10;
-        background-color: white;
-        color: black;
-        flex-wrap: wrap;
-        align-items: center;
-        /*for vertically center*/
-        justify-content: center;
-        /*for horizontally center*/
-    }
+}
+
+.showcase2 {
+    width: 95%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    margin-top: 10%;
+}
+
+#showcase2div {
+    margin-left: 10vw;
+    margin-right: 5vw;
+}
+
+#showcase2divText {
+    background-color: #2596be;
+    padding: 85px 50px 75px 50px;
+    color: white;
+}
+
+#showcase2divImg {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.showcase3 {
+    margin-top: 10%;
+    width: 95%;
+    position: relative;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content2 {
+    z-index: 10;
+    background-color: white;
+    color: black;
+    flex-wrap: wrap;
+    align-items: center;
+    /*for vertically center*/
+    justify-content: center;
+    /*for horizontally center*/
+}
