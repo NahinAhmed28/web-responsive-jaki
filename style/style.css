@@ -1,161 +1,325 @@
+.green {
+  
+}
+
+
+
+#btn1{
+  z-index: 9999999999999999;
+  margin: 20px;
+}
+.navbar-brand{
+  z-index: 9999999999999999;
+  padding: 20px;
+}
+#insideNavbar {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+.navbar-collapse {
+  transition: 0.2s;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+  top: -90px;
+  height: 400px !important ;
+
+  z-index: 2222;
+}
+
+.show {
+     transition: 0.3s;
+  flex-grow: 1;
+  align-items: center;
+  position: relative;
+
+  height: 400px !important ;
+  background-color: #2596be;
+
+
+}
 .navbar-toggler>.close {
-    display: inline;
+  display: inline;
 }
 
 .navbar-toggler.collapsed>.close,
 .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
-    display: none;
+  display: none;
 }
 
+img, svg {
+  vertical-align: middle;
+  color: white;
+}
+/* .shadow{
+  background-Color : #2596be !important;
+} */
+.vertical_line {
+  background: #2a2826;
+  height: 224%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2px;
+  z-index: 10;
+}
+#showcase2divText {
+  background-color: #2596be;
+  padding: 102px 50px 75px 50px;
+  color: white;
+  height: 437px !important;
+  position: relative;
+  left: 50px;
+  top: 23px;
+  z-index: 9;
+}
 .navbar {
-    top: 0;
-    right: 0;
-    height: 0px;
-    z-index: 100;
-    color: white;
+  transition: 0.3s;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
 }
+.navbar {
+  transition: 0.3s;
+  top: 0;
+  right: 0;
+  height: 0px;
+  z-index: 100;
+  color: white;
+}
+.navbar-nav {
+  transition: 0.3s;
+  height: 400px !important ;
 
+  background-color: #2596be !important;
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  /* background-color: #2596be; */
+}
 @media (min-width: 1000px) {
-    #insideNavbar {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    .navbar {
-        margin-left: 250px;
-        margin-right: 250px;
-    }
+  #insideNavbar {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+  .navbar {
+      margin-left: 153px;
+      margin-right: 136px;
+  }
 }
 
 @media (max-width: 1500px) {
-    .navbar-collapse {
-        display: inline;
-    }
+  .navbar-collapse {
+      display: inline;
+  }
+}
+@media (max-width: 1280px) {
+  .navbar-collapse {
+      display: inline;
+  }
+  #showcase2divText {
+      background-color: #2596be;
+      padding: 4px 50px 75px 50px !important;
+      color: white;
+      height: 300px !important;
+      position: relative;
+      left: 51px;
+      top: 21px;
+      z-index: 9;
+  }
+}
+@media (max-width: 1380px) {
+  .navbar-collapse {
+      display: inline;
+  }
+  #showcase2divText {
+      background-color: #2596be;
+      padding: 5px 50px 75px 50px !important;
+      color: white;
+      height: 300px !important;
+      position: relative;
+      left: 51px;
+      top: 21px;
+      z-index: 9;
+  }
+}
+@media (max-width: 575px) {
+  .vertical_line {
+      background: #2a282600;
+      height: 224%;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 2px;
+      z-index: 10;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+      color: rgba(255,255,255,.55);
+      font-size: 20px;
+  }
+  #showcase2div {
+      margin-left: 0vw !important;
+      margin-right: 0vw !important;
+  }
+  .showcase2 {
+      /* width: 93%; */
+      margin-left: 5vh;
+      margin-right: 5vh;
+      margin-top: 10%;
+  }
+  #showcase2divText {
+      background-color: #2596be;
+      padding: 102px 50px 75px 50px;
+      color: white;
+      height: 437px !important;
+      position: relative;
+      left: 0px;
+      top: 0px;
+      z-index: 9;
+  }
+  #showcase2divImg {
+      width: 100% !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
 
 
 /* .type-1 {
-    max-width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: -9999;
-    min-height: clamp(0px, 56.25vw, 100vh) !important;
-    background: url(../style/clock-bg.png) no-repeat center center fixed;
-    background-size: cover;
-    background-position: center;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -9999;
+  min-height: clamp(0px, 56.25vw, 100vh) !important;
+  background: url(../style/clock-bg.png) no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
 }
- */
+*/
 
 .showcase1 {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 10px;
-    color: white;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+  color: white;
 }
 
 .img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .img-container img {
-    max-width: 95%;
-    min-height: 100%;
-    object-fit: cover;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  max-width: 95%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .content {
-    z-index: 10;
-    background-color: rgba(7, 14, 16, 0.3);
-    width: 97%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    /*for vertically center*/
-    justify-content: center;
-    /*for horizontally center*/
+  z-index: 10;
+  background-color: rgba(7, 14, 16, 0.3);
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*for vertically center*/
+  justify-content: center;
+  /*for horizontally center*/
 }
 
 .content h1 {
-    font-size: 80px;
-    font-weight: 150;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 10%;
+  font-size: 80px;
+  font-weight: 150;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 10%;
 }
 
 @media screen and (max-width: 767px) {
-    .content h1 {
-        font-size: 40px;
-        font-weight: 150;
-        font-family: 'Times New Roman', Times, serif;
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
+  .content h1 {
+      font-size: 40px;
+      font-weight: 150;
+      font-family: 'Times New Roman', Times, serif;
+      margin-left: 5vh;
+      margin-right: 5vh;
+  }
 }
 
 .showcase2 {
-    width: 95%;
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 10%;
+
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-top: 10%;
 }
 
 #showcase2div {
-    margin-left: 10vw;
-    margin-right: 5vw;
+  margin-left: 10vw;
+  margin-right: 5vw;
 }
 
 #showcase2divText {
-    background-color: #2596be;
-    padding: 85px 50px 75px 50px;
-    color: white;
+  background-color: #2596be;
+  padding: 85px 50px 75px 50px;
+  color: white;
 }
 
 #showcase2divImg {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .showcase3 {
-    margin-top: 10%;
-    width: 95%;
-    position: relative;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    object-fit: cover;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 10%;
+  width: 95%;
+  position: relative;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content2 {
-    z-index: 10;
-    background-color: white;
-    color: black;
-    flex-wrap: wrap;
-    align-items: center;
-    /*for vertically center*/
-    justify-content: center;
-    /*for horizontally center*/
+  z-index: 10;
+  background-color: white;
+  color: black;
+  flex-wrap: wrap;
+  align-items: center;
+  /*for vertically center*/
+  justify-content: center;
+  /*for horizontally center*/
 }
